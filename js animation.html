@@ -1,0 +1,94 @@
+<!-- js animation -->
+<html lang="en">
+    <head>
+        <!-- Style the Elements -->
+        <link rel="stylesheet" href="style1.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+        </head>
+       
+
+<body>
+
+<h1>My First JavaScript Animation</h1>
+
+<div id="animation"> animation will go here</div>
+<div id ="container">
+    <div id ="animate">red animation will go here</div>
+  </div>
+
+
+    <p><button onclick="myMove()">Click Me</button></p> 
+<!--     
+    <div id ="container">
+      <div id ="animate"></div>
+    </div>
+     -->
+    <script>
+        function myMove() {
+        let id = null;
+        const elem = document.getElementById("animate");   
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+            if (pos == 350) {
+            clearInterval(id);
+            } else {
+            pos++; 
+            elem.style.top = pos + "px"; 
+            elem.style.left = pos + "px"; 
+            }
+        }
+        }
+    </script>
+ 
+  <script>
+
+    id = setInterval(frame, 5);
+
+    function frame() {
+    if (/* test for finished */) {
+        clearInterval(id);
+    } else {
+        /* code to change the element style */ 
+    }
+    }
+</script>
+
+    <!-- <h1>JavaScript HTML Events</h1>
+    <h2>The onmouseover Attribute</h2> -->
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+    style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+    Mouse Over Me</div>
+
+    <script>
+    function mOver(obj) {
+    obj.innerHTML = "Thank You"
+    }
+
+    function mOut(obj) {
+    obj.innerHTML = "Mouse Over Me"
+    }
+    </script>
+<!-- disappear jquery -->
+
+    <script>
+    $(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+    });
+    </script>
+
+    <body>
+
+    <p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+
+    </body>
+    </html>
+

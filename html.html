@@ -1,0 +1,307 @@
+<html lang="en">
+    <head>
+      
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+        <!-- Web page CSS -->
+        <link rel="stylesheet" href="assets/css/style.css" />
+
+        <!-- lightbox CSS -->
+        <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
+
+        
+            <!-- Favicons -->
+            <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/icon/apple-touch-icon.png"
+            />
+            <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/icon/favicon-32x32.png"
+            />
+            <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/icon/favicon-16x16.png"
+            />
+
+            <title>JabTV Landing Page</title>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav>
+            <a href="#" class="logo">
+              <h1>
+                <span class="jab">DEV</span><span class="tv">SOL</span
+                ><span class="fist">&#x1F44A;</span>
+              </h1>
+            </a>
+     
+      <ul>
+        <li class="nav-item">
+          <a href="#about" class="nav-link" id="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#stars" class="nav-link" id="nav-link">Boxing Stars</a>
+        </li>
+        <li class="nav-item">
+          <a href="#stakeholders" class="nav-link" id="nav-link"
+            >stakeholders</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#sub" class="nav-link" id="nav-link">Subscribe</a>
+        </li>
+        </ul>
+  
+
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <script>
+      const hamburger = document.querySelector("#hamburger");
+      const navMenu = document.querySelector("ul");
+
+        function openMenu() {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        }
+    </script>
+        <!-- Hero section -->
+
+    <section class="hero">
+        <div class="intro-text">
+          <h1>
+            <span class="hear"> You can Hear the Jabs </span> <br />
+            <span class="connecting"> Connecting</span>
+          </h1>
+          <p>
+            An online streaming platform for boxing matches <br />
+            We also dedicate some special time to throwbacks cuz old is gold
+          </p>
+          <a class="btn red" href="#">Learn More</a>
+          <a class="btn blue" href="#">Subscribe</a>
+        </div>
+        <div class="i-frame">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/sUmM_PFpsvQ"
+            title="YouTube video player"
+            frameborder="10"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+          <div class="stand-1"></div>
+          <div class="stand-2"></div>
+        </div>
+      </section>
+
+  
+        <!-- Dark/light theme switcher -->
+        <div class="theme-switch">
+          <input type="checkbox" class="checkbox" id="checkbox" />
+          <label for="checkbox" class="label">
+             <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
+             <ion-icon name="moon-outline" class="moon"></ion-icon>
+             <div class="switcher"></div>
+          </label>
+      </div>
+      <script>
+      const checkbox = document.querySelector("#checkbox");
+
+      checkbox.addEventListener("change", () => {
+        // Toggle website theme
+        document.body.classList.toggle("dark");
+      });
+      </script>
+
+        <!-- Bars -->
+        <script>
+        {
+        const navLink = document.querySelectorAll("#nav-link");
+
+          navLink.forEach((n) => n.addEventListener("click", closeMenu));
+          function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+          }
+        }
+        </script>
+        <!-- Hero section -->
+    
+        <!-- About section -->
+
+        <section class="about" id="about">
+            <h3>Watch the Jabs</h3>
+            <p>
+              Our primary objective is to bring live boxing matches to fans all around
+              the world
+            </p>
+      
+            <h3>Its not About the Fights Alone!</h3>
+            <p>
+              We also air documentaries specially made for the greats, lifestyle of
+              boxers, news, and more.
+            </p>
+        </section>
+    
+        <!-- Lightbox image gallery -->
+        <section class="stars" id="stars">
+            <div class="stars-gallery">
+              <a href="assets/images/glove3.jpeg" class="big">
+                <img
+                  src="assets/images/glove3.jpeg"
+                  alt="Anthony Joshua"
+                  title="AJ"
+                />
+              </a>
+      
+              <a href="assets/images/glove3.jpeg" class="big">
+                <img
+                  src="assets/images/glove3.jpeg "
+                  alt="Tyson Fury"
+                  title="Gypsy King"
+                />
+              </a>
+      
+              <a href="assets/images/glove4.jpeg" class="big">
+                <img
+                  src="assets/images/glove4.jpeg"
+                  alt="Iron Mike"
+                  title="Iron Mike"
+                />
+              </a>
+      
+              <a href="assets/images/glove2.jpeg" class="big">
+                <img
+                  src="assets/images/glove2.jpeg"
+                  alt="Mohammed Ali"
+                  title="The Greatest"
+                />
+              </a>
+      
+              <a href="assets/images/glove1.jpeg" class="big">
+                <img
+                  src="assets/images/glove1.jpeg"
+                  alt="Deontay Wilder"
+                  title="Bronze Bomber"
+                />
+              </a>
+      
+              <a href="assets/images/glove4.jpeg" class="big">
+                <img
+                  src="assets/images/glove4.jpeg"
+                  alt="George Foreman"
+                  title="Big George Foreman"
+                />
+              </a>
+            </div>
+            
+    
+        <!-- Jab TV Stakeholders -->
+
+        <section class="people" id="stakeholders">
+          <div class="stakeholders">
+            <div class="persons">
+              <div class="person-1">
+                <img src="assets/images/1.jpeg" alt="John Doe" />
+                <p class="name">John Doe</p>
+                <p class="role">Founder</p>
+              </div>
+              <div class="person-2">
+                <img src="assets/images/2.jpeg" alt="Jane Doe" />
+                <p class="name">Jane Doe</p>
+                <p class="role">MD</p>
+              </div>
+              <div class="person-3">
+                <img src="assets/images/1.jpeg" alt="John Doe Jnr" />
+                <p class="name">John Doe JNR</p>
+                <p class="role">Head Analyst</p>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+        <!-- Email subscription -->
+    <section class="sub" id="sub">
+          <h3>Subscribe to our newsletter for updates</h3>
+          <form action="#">
+            <input
+              type="email"
+              name="email"
+              id="email-sub"
+              class="email-sub"
+              required
+            />
+            <input
+              type="submit"
+              value="Subscribe"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+    </section>
+
+        <!-- Social icons -->
+
+        <section class="social">
+          <h3>Connect with us on Social Media</h3>
+          <div class="socicons">
+            <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
+            <a href="#"> <ion-icon name="logo-instagram"></ion-icon> </a>
+            <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
+          </div>
+         </section>
+    
+        <!-- Scroll to top button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top"></button>
+        <i class="scroll-up" id="scroll-up"
+            ><img
+            src="assets/icon/523835.png"
+            class="socicon up-arrow"
+            alt="up-arrow"
+            /></i>
+            <script>
+
+            const scrollUp = document.querySelector("#scroll-up");
+            scrollUp.addEventListener("click", () => {
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+              });
+            });
+
+            
+          </script>
+        <!-- Web page script -->
+        <script src="assets/js/app.js"></script>
+    
+        <!-- Ion icons CDN -->
+        <script
+          type="module"
+          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+    
+        <!-- Simple lightbox -->
+        <script src="assets/js/simple-lightbox.min.js"></script>
+       
+          <!-- // Simple lightbox initializer -->
+          <script>
+            var lightbox = new SimpleLightbox(".stars-gallery a");
+        </script>
+      <footer>&copy;2020. All Rights Reserved</footer>
+      </body>
+      
+    </html>
+
